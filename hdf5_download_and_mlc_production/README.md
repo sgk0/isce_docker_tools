@@ -16,14 +16,14 @@ After the directory structure was created and files finished downloading ("0_dow
 
 You may now launch the docker container for processing the hdf5 data to zipped MLCs. Please note that although the data may be CX, CG or CD and different products, the mlcs had been renamed to conform with other UAVSAR products so that it readily works with the RTC processing scripts in "uavsar_rtc_mlc". 
 
-Please note, you may continue data processing in the same docker_new_runs folder, but will need to swap the set of RTC relted .py scripts (including run_ctrl.py) with the ones used in this tool. Then launch docker again.
+Please note, you may continue data processing in the same docker_new_runs folder, but will need to swap the set of RTC related .py scripts (including run_ctrl.py) with the ones used in this tool. Then launch docker again.
 
 Docker command line example
 e.g. if the run control script is in /data1/uavsar/uavsar_h5slc2mlc_rev/docker_new_runs run:
 
 docker run -it --rm -v /data1/uavsar/uavsar_h5slc2mlc_rev:/work/uavsar_mlcproc 667c090f09b5
 where /data1/uavsar/uavsar_h5slc2mlc_rev needs to be replaced to match the path to the /docker_new_runs folder
-where 67c090f09b5 needs to be replaced with whichever number corresponds to the IDT image installed on local system
+where 667c090f09b5 needs to be replaced with whichever number corresponds to the IDT image installed on local system
 
 PS: By default, the intermediate data for producing the mlcs is kept, to assist in troubleshooting, but I recommend to delete the folders after each set of MLCs are produced after you have the zipped MLCs
 
