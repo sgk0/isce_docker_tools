@@ -10,7 +10,7 @@ unm = ''
 pwd = ''
 
 ##########headers
-uavdl = 'UA_NISARP_09702' #the flightlines to search for
+#uavdl = 'UA_NISARP_09702' #the flightlines to search for
 checknewfn = 1
 
 if os.path.exists('wget.txt'):
