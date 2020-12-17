@@ -90,7 +90,7 @@ def makemlc(CAMPAIGN=CAMPAIGN, SITE=SITE, PROD=PROD, PROD2=PROD2, channels=chann
     basen_e = aa[1]
     #print(aa)
 
-    #now write these cross products to a file ending in .slc
+    #now write these slc data to a file ending in .slc
     pols = ['HH', 'HV', 'VH', 'VV']
     datfiles = [dat_HH, dat_HV, dat_VH, dat_VV]
 
@@ -261,7 +261,6 @@ def makemlc(CAMPAIGN=CAMPAIGN, SITE=SITE, PROD=PROD, PROD2=PROD2, channels=chann
 
     #multi-look according to mlc data provided in the UAVSAR annotation files
 
-    #take cross products
     if PROD == '138':
         rlk = '2'
     else:
