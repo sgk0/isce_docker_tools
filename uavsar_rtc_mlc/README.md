@@ -20,7 +20,7 @@ The workflow is to be used in conjunction with a Docker container that has a sli
 1. Install the docker image of ISCE (modified for RTC)
   - download the isce_docker_tools master branch zip file
   - unzip and change directory to /isce_docker_tools-master/uavsar_rtc_mlc/Docker_install
-  - in the "Docker_Install" folder run "docker build -t imgname ." where imgname is a custom name on the command line. This will install a Docker image on your system. 
+  - in the "Docker_Install" folder run "docker build -t imgname ." (if that doesn't work try 'docker build - < Dockerfile') where imgname is a custom name on the command line. This will install a Docker image on your system. 
   - "docker image ls", and note the IMAGE ID value (copy/paste)
   - alternatively if we've put the image on the Docker repository, you may use "docker pull MIRSL/"
 
