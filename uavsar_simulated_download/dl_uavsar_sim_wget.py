@@ -37,7 +37,7 @@ if checknewfn == 1:
     wp = html.fromstring(r.content)
     ll = wp.xpath('//a/@href')
 
-    with open('filelist.txt', 'r') as f:
+    with open('filelist.txt', 'w+') as f:
         ll2 = f.read().splitlines()
 
     aa = set(ll)
